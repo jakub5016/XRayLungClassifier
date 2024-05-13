@@ -1,0 +1,2 @@
+1. Change "," to ";" in csv where it shouldn't be ","
+2. Delete "Index" name 
