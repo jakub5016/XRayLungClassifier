@@ -11,7 +11,7 @@ DISEASE = "Pneumothorax"
 if __name__ =="__main__":
     df = pd.read_csv('../../sample_labels.csv')
 
-    df = df[df[LABEL_COLUMN_NAME].str.contains(DISEASE)]
+    df = df[df[LABEL_COLUMN_NAME].isin([DISEASE])]
 
     print(f"Ammout of {DISEASE} records: {df.size}")
 
